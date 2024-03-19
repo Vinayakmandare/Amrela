@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+      <!-- site metas -->
+      <title>Amarela Restaurant with Bar</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#"/></div>
+      </div>
+      <!-- end loader -->
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="header">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo">
+                              <a href="index.php"><img src="images/logo3.jpg" alt="#"/></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                           <ul class="navbar-nav mr-auto">
+                              <li class="nav-item active">
+                                 <a class="nav-link" href="index.php">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="about.php">About</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="room.php">Our room</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="gallery.php">Gallery</a>
+                              </li>
+                              <!-- <li class="nav-item">
+                                 <a class="nav-link" href="blog.php">Blog</a>
+                              </li> -->
+                              <li class="nav-item">
+                                 <a class="nav-link" href="contact.php">Contact Us</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- end header inner -->
+      <!-- end header -->
+      <!-- banner -->
+      <section class="banner_main">
+         <div id="myCarousel" class="carousel slide banner" data-ride="carousel">
+            <ol class="carousel-indicators">
+               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+               <li data-target="#myCarousel" data-slide-to="1"></li>
+               <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <img class="first-slide form-control" src="images/banner.jpg" alt="First slide">
+                  <div class="container">
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <img class="second-slide form-control" src="images/rooms3.jpg" alt="Second slide">
+               </div>
+               <div class="carousel-item">
+                  <img class="third-slide form-control" src="images/rooms1.jpg" alt="Third slide">
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+         </div>
+         <div class="booking_ocline">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-5">
+                     <div class="book_room">
+                        <h1>Book a Room Online</h1>
+                        <form class="book_now" method="POST" action="send_mail2.php">
+                           <div class="row">
+                              
+                          
+                              <div class="col-md-12">
+                                 <span>Name</span>
+                                 <img class="date_cua" src="images/user.png">
+                                 <input class="online_book" placeholder="Enter Name" type="text" name="name" style="padding:0px 0px 0px 12px;margin:0px 0px 0px 0px;">
+                              </div>
+                              <div class="col-md-12">
+                                 <span>Phone</span>
+                                 <img class="date_cua" src="images/phone.png">
+                                 <input class="online_book" placeholder="Enter Phone" type="number" name="phone" style="padding:0px 0px 0px 12px;margin:0px 0px 0px 0px;">
+                              </div>
+                           
+                              <div class="col-md-12">
+                                 <span>Message</span>
+                                 <img class="date_cua" src="images/msg2.png">
+                                 <input class="online_book" placeholder="Enter Message" type="text" name="msg" style="padding:0px 0px 0px 12px;margin:0px 0px 0px 0px;">
+                              </div>
+                              <div class="col-md-12">
+                                 <span>Arrival</span>
+                                 <img class="date_cua" src="images/date.png">
+                                 <input class="online_book" placeholder="DD/MM/YYYY" type="text" id="arrival" name="f_date" style="padding:0px 0px 0px 12px;margin:0px 0px 0px 0px;">
+                              </div>
+                              <div class="col-md-12">
+                                 <span>Departure</span>
+                                 <img class="date_cua" src="images/date.png">
+                                 <input class="online_book" placeholder="DD/MM/YYYY" type="text"  id="departure" name="t_date" style="padding:0px 0px 0px 12px;margin:0px 0px 25px 0px;">
+                              </div>
+                              <div class="col-md-12">
+                                <button class="book_btn" type="submit" name="book">Book Now</button>
+                              </div>
+                           </div>
+                        </form>
+                       
+                     </div>
+                  </div>
+               </div>
+            </div>
+         
+            <a href="contact.php"> <button class="book_btn1" type="submit">Book Now</button></a>
+                              
+         </div>
+       
+      </section>
+   
+      <!-- end banner -->
+      <!-- about -->
+      <div class="about">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-5">
+                  <div class="titlepage">
+                     <h2>About Us</h2>
+                     <p>If you are in south Goa and want to eat the best Goan food then you should definitely visit Amarela restaurant. We tried almost all the famous dishes there. The best ones were the crab masala which was extremely juicy and fresh, Goan prawns curry which has an authentic Goan taste, prawns biryani which goes very well with the prawns curry, mussels rava fry which were exceptional and prawns rava fry which were agin just finger licking good. The owner Atlee is the sweetest human ever and the best host who is very kind and helping.
+
+ </p>
+                     <a class="read_more" href="https://www.tripadvisor.com/ShowUserReviews-g15350075-d17803157-r914605497-Amarela_Restaurant_with_Bar-Assolna_Salcette_South_Goa_District_Goa.html" target="_blank"> Read More</a>
+                  </div>
+               </div>
+               <div class="col-md-7">
+                  <div class="about_img">
+                     <figure><img src="images/room.jpg" alt="#" onclick="window.open('images/room.jpg')"/></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end about -->
+      <!-- our_room -->
+      <div  class="our_room">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Cinza</h2>
+                     <!-- <p>Lorem Ipsum available, but the majority have suffered </p> -->
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-4 col-sm-6">
+                  <div id="serv_hover"  class="room">
+                     <div class="room_img">
+                        <figure><img src="images/rooms1.png" alt="#" onclick="window.open('images/rooms1.png')"/></figure>
+                     </div>
+                     <!-- <div class="bed_room">
+                        <h3>Bed Room</h3>
+                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there </p>
+                     </div> -->
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6">
+                  <div id="serv_hover"  class="room">
+                     <div class="room_img">
+                        <figure><img src="images/rooms2.png" alt="#" onclick="window.open('images/rooms2.png')"/></figure>
+                     </div>
+                     <!-- <div class="bed_room">
+                        <h3>Bed Room</h3>
+                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there </p>
+                     </div> -->
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6">
+                  <div id="serv_hover"  class="room">
+                     <div class="room_img">
+                        <figure><img src="images/rooms3.png" alt="#" onclick="window.open('images/rooms3.png')"/></figure>
+                     </div>
+                     <!-- <div class="bed_room">
+                        <h3>Bed Room</h3>
+                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there </p>
+                     </div> -->
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6">
+                  <div id="serv_hover"  class="room">
+                     <div class="room_img">
+                        <figure><img src="images/rooms4.png" alt="#" onclick="window.open('images/rooms4.png')"/></figure>
+                     </div>
+                     <!-- <div class="bed_room">
+                        <h3>Bed Room</h3>
+                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there </p>
+                     </div> -->
+                  </div>
+               </div>
+
+                 
+         
+               <div class="col-md-4 col-sm-6">
+                  <div id="serv_hover"  class="room">
+                     <div class="room_img">
+                        <figure><img src="images/rooms5.png" alt="#" onclick="window.open('images/rooms5.png')"/></figure>
+                     </div>
+                     <!-- <div class="bed_room">
+                        <h3>Bed Room</h3>
+                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there </p>
+                     </div> -->
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6">
+                  <div id="serv_hover"  class="room">
+                     <div class="room_img">
+                        <figure><img src="images/rooms6.png" alt="#" onclick="window.open('images/rooms6.png')"/></figure>
+                     </div>
+                     <!-- <div class="bed_room">
+                        <h3>Bed Room</h3>
+                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there </p>
+                     </div> -->
+                  </div>
+               </div>
+               <div class="container info text-justify" >
+                  <p style="font-size:large;"><strong>Check-in:</strong>11:30 am </span><br><strong>Check-out:</strong> 10:00 am <br> <br><span id="breakfast">Breakfast (set menu): 8:00 am – 10:00 am</span>
+<br><span>Maximum capacity: 6 adults for overnight stays</span><br><br>
+<strong>Rates:</strong> (for overnight stays) Mon – Thu: INR 5,000/- Fri – Sun: INR 7,000/- <br><br>
+<span style="font-size: medium;">
+Above prices are for couple with 2 kids Extra INR 1,000/ person w.ill be charged
+Price is including taxes & complimentary breakfast.
+For day picnics without cabin (maximum 15 people from 9:00 am – 6:00 pm): INR 7,500/-
+Additional INR 4,000 if cabin needed during the day. Extra INR 500 / person will be charged if count 
+exceeds 15 people.<br>
+Olá Patrão,<br>
+Here are some ground rules so that you can enjoy a peaceful stay……<br>
+Please keep the room and the property litter free. Use the dustbins at the property.
+Please keep your pets on leash and ensure they do not damage the property. Pets are not allowed on 
+beds and other furniture and ensure that their waste is disposed properly.
+No housekeeping staff available, we are not liable for any accident, injuries or losses. However, a 
+caretaker will be there at your perusal. Lock the doors and windows when leaving the room during 
+your stay. Please take care of your valuables.
+Cooking, if any should be done in the kitchen provided and dining should be in the dining area only.
+Complimentary discount of 10% on lunch and dinner at ‘Amarela Restaurant with Bar’ during your stay.
+Please do not smoke indoors & do not eat / drink in the bed area.
+There will be a ne levied in case of any damage to the property. Any loss / theft of items belonging
+to the property will be recovered from the guests.
+Only guests checked in will be allowed in the property. Underage couples (below 18yrs) not allowed.
+Please maintain decorum of the neighbourhood. No loud music/noise allowed after 10:00 pm.</span><br><br>
+<strong>Swimming area:</strong><br><span style="font-size: medium;"> - No diving in the pool. 
+<br>- Use the shower before entering the pool.
+<br>- Wear proper swimming attire.
+<br>- Please use restrooms and do not urinate in the pool.
+<br>- No food / drinks allowed in the pool. Do not litter the pool.
+<br>- Adult supervision for kids at all times inside and outside the pool.
+<br>- No jumping & swimming in the river. Do not litter the river.
+<br>- No pool attendant available; we are not liable for any accident, injuries or losses.
+<br>- Maintain personal hygiene and do not use the pool if you’re experiencing symptoms of diarrhoea, 
+vomiting, skin rash, skin diseases, open wounds which may harm yourself or others using the pool.
+<br>- Only guests of this facility may use the pool.<br>
+This property is under CCTV surveillance.<br></span>
+<span style="text-align:right;">Thanks and have a susegad stay…</span>
+</p>
+            </div>
+            
+         </div>
+      </div>
+    
+      <!-- end our_room -->
+      <!-- gallery -->
+      <div  class="gallery">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>gallery</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-3 col-sm-6">
+                  <div class="gallery_img">
+                     <figure><img src="gallery/20240128_153357.jpg" alt="#" onclick="window.open('gallery/20240128_153357.jpg')"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-3 col-sm-6">
+                  <div class="gallery_img">
+                     <figure><img src="gallery/20240128_153704.jpg" alt="#" onclick="window.open('gallery/20240128_153704.jpg')"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-3 col-sm-6">
+                  <div class="gallery_img">
+                     <figure><img src="gallery/20240128_154259.jpg" alt="#" onclick="window.open('gallery/20240128_154259.jpg')"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-3 col-sm-6">
+                  <div class="gallery_img">
+                     <figure><img src="gallery/20240128_155353.jpg" alt="#" onclick="window.open('gallery/20240128_155353.jpg')"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-3 col-sm-6">
+                  <div class="gallery_img">
+                     <figure><img src="gallery/20240128_155435.jpg" alt="#" onclick="window.open('gallery/20240128_155435.jpg')"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-3 col-sm-6">
+                  <div class="gallery_img">
+                     <figure><img src="gallery/20240128_155458.jpg" alt="#" onclick="window.open('gallery/20240128_155458.jpg')"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-3 col-sm-6">
+                  <div class="gallery_img">
+                     <figure><img src="gallery/20240128_155522.jpg" alt="#" onclick="window.open('gallery/20240128_155522.jpg')"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-3 col-sm-6">
+                  <div class="gallery_img">
+                     <figure><img src="gallery/Screenshot 2024-03-13 112927.jpg" alt="#" onclick="window.open('gallery/Screenshot 2024-03-13 112927.jpg')"/></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end gallery -->
+      <!-- blog -->
+      <!-- <div  class="blog">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Blog</h2>
+                     <p>Lorem Ipsum available, but the majority have suffered </p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="blog_box">
+                     <div class="blog_img">
+                        <figure><img src="images/blog1.jpg" alt="#"/></figure>
+                     </div>
+                     <div class="blog_room">
+                        <h3>Bed Room</h3>
+                        <span>The standard chunk </span>
+                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generatorsIf you are   </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="blog_box">
+                     <div class="blog_img">
+                        <figure><img src="images/blog2.jpg" alt="#"/></figure>
+                     </div>
+                     <div class="blog_room">
+                        <h3>Bed Room</h3>
+                        <span>The standard chunk </span>
+                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generatorsIf you are   </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="blog_box">
+                     <div class="blog_img">
+                        <figure><img src="images/blog3.jpg" alt="#"/></figure>
+                     </div>
+                     <div class="blog_room">
+                        <h3>Bed Room</h3>
+                        <span>The standard chunk </span>
+                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generatorsIf you are   </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div> -->
+      <!-- end blog -->
+      <!--  contact -->
+      <div class="contact">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2 style="margin-top:2rem">Contact Us</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-6">
+                  <form id="request" method="POST" action="send_mail2.php"  class="main_form">
+                     <div class="row">
+                        <div class="col-md-12 ">
+                           <input class="contactus" placeholder="Name" type="text" name="name"> 
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactus" placeholder="Email" type="text" name="email"> 
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactus" placeholder="Phone Number" type="text" name="phone">                          
+                        </div>
+                        <div class="col-md-12">
+                           <textarea class="textarea" placeholder="Message" type="text" Message="Name" name="msg">Message</textarea>
+                        </div>
+                        <div class="col-md-12 ">
+                        <span class="placeholder">Arrival Date(DD-MM-YYYY)</span>
+                           <input class="contactus" placeholder="Arrival Date(DD-MM-YYYY)" type="text" id="arrival" name="f_date"> 
+                  
+                        </div>
+                        <div class="col-md-12">
+                        <span class="placeholder">Departure Date(DD-MM-YYYY)</span>
+                           <input class="contactus" placeholder="Departure Date(DD-MM-YYYY)" type="text" id="departure" name="t_date"> 
+                        </div>
+                        <div class="col-md-12 d-flex justify-content-center">
+                           <button class="send_btn" type="submit" name="submit">Send</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+               <div class="col-md-6">
+                  <div class="map_main">
+                     <div class="map-responsive">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15402.35362292178!2d73.966392!3d15.1809324!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbe4d746ace5313%3A0x867aee9f08b7c18!2sAmarela%20Restaurant%20with%20Bar!5e0!3m2!1sen!2sin!4v1710309810509!5m2!1sen!2sin" width="600" height="570" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end contact --> 
+      <!--  footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class=" col-md-4">
+                     <h3>Contact US</h3>
+                     <ul class="conta">
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> H.no 44/D, ...Passagem, Tariwaddo, Assolna Salcete Goa, India</li>
+                        <li><i class="fa fa-mobile" aria-hidden="true"></i> +91 84110 25938</li>
+                        <li> <i class="fa fa-envelope" aria-hidden="true"></i><a href="#"> info@dasilvasgroup.com</a></li>
+                     </ul>
+                  </div>
+                  <div class="col-md-4">
+                     <h3>Quick Link</h3>
+                     <ul class="link_menu">
+                        <li class="active"><a href="index.php">Home</a></li>
+                        <li><a href="about.php"> About</a></li>
+                        <li><a href="room.php">Our Room</a></li>
+                        <li><a href="gallery.php">Gallery</a></li>
+                        <!-- <li><a href="blog.php">Blog</a></li> -->
+                        <li><a href="contact.php">Contact Us</a></li>
+                     </ul>
+                  </div>
+                  <div class="col-md-4">
+                     <h3>News letter</h3>
+                     <form class="bottom_form" action="send_mail2.php" method="POST">
+                        <input class="enter" placeholder="Enter your email" type="text" name="sub">
+                        <button class="sub_btn" type="submit" name="subscribe">subscribe</button>
+                     </form>
+                     <ul class="social_icon">
+                        <li><a href="https://www.facebook.com/amarelagoa" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.instagram.com/amarela_restaurant/?r=nametag" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="https://maps.app.goo.gl/p7eh5AqVomrn8VnT8" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
+                        <!-- <li><a href="#"><i class="fa fa-" aria-hidden="true"></i></a></li> -->
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-10 offset-md-1">
+                        <p></p>
+                       <p>©  All Rights Reserved.<br>Designed by <a href="https://xpresshotelerp.com/" target="_blank"><strong>RN Softwares & Consultors</strong></p></a>
+                        <?php echo date('Y')?>
+                        <p>
+                        <!-- © 2019 All Rights Reserved. Design by <a href="https://html.design/"> Free Html Templates</a>
+                        <br><br>
+                        Distributed by <a href="https://themewagon.com/" target="_blank">ThemeWagon</a>
+                        </p> -->
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script>
+          var saledatePicker = flatpickr('#arrival', {
+    dateFormat: "d-m-Y",
+    minDate:"today"
+
+          })
+          var saledatePicker = flatpickr('#departure', {
+    dateFormat: "d-m-Y",
+    minDate:"today"
+
+          })
+
+      </script>
+   </body>
+</html>
